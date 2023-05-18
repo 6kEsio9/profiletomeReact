@@ -1,0 +1,659 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppings', sans-serif;
+}
+
+body {
+    background: #efefef;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #02dd06;
+    padding: 5px 5%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 160px;
+    margin-right: 45px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left img {
+    width: 80px;
+}
+
+.nav-left ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.nav-left ul li img {
+    width: 28px;
+    margin: 0 15px;
+}
+
+.nav-user-icon img {
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-user-icon {
+    margin-left: 30px;
+}
+
+.search-box {
+    background-color: #efefef;
+    width: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.search-box img {
+    width: 18px;
+}
+
+.search-box input {
+    width: 100%;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+    border: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 5%;
+}
+
+.left-sidebar {
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+}
+
+.right-sidebar {
+    flex-basis: 25%;
+    position: sticky;
+    top: 70px;
+    align-self: flex-start;
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    color: #626262;
+}
+
+.main-content {
+    flex-basis: 47%;
+}
+
+.imp-links a,
+.shortcut-links a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #626262;
+    width: fit-content;
+}
+
+.imp-links a img {
+    width: 25px;
+    margin-right: 15px;
+}
+
+.imp-links a:last-child {
+    color: #1876f2;
+}
+
+.imp-links {
+    border-bottom: 1px solid #ccc;
+}
+
+.shortcut-links a img {
+    width: 40px;
+    border-radius: 4px;
+    margin-right: 15px;
+}
+
+.shortcut-links p {
+    margin: 25px 0;
+    color: #626262;
+    font-weight: 500;
+}
+
+.sidebar-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.right-sidebar h4 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.sidebar-title a {
+    text-decoration: none;
+    color: #1876f2;
+    font-size: 12px;
+}
+
+.friends-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.friends-list div img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.friends-list div {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.write-post-container {
+    width: 90%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+}
+
+.user-profile img {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-profile p {
+    margin-bottom: -5px;
+    font-weight: 500;
+    color: #626262;
+}
+
+.user-profile small {
+    font-size: 12px;
+}
+
+.post-input-container {
+    padding-left: 55px;
+    padding-top: 20px;
+}
+
+.post-input-container textarea {
+    width: 90%;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    resize: none;
+}
+
+.add-post-links {
+    display: flex;
+    margin-top: 10px;
+}
+
+.add-post-links a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #626262;
+    margin-right: 30px;
+    font-size: 13px;
+}
+
+.add-post-links a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.post-container {
+    width: 90%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px;
+    color: #626262;
+    margin: 20px 0;
+}
+
+.user-profile span {
+    font-size: 13px;
+    color: #9a9a9a;
+}
+
+.post-text {
+    color: #9a9a9a;
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.post-img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.post-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.activity-icons div img {
+    width: 18px;
+    margin-right: 10px;
+}
+
+.activity-icons div {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.post-profile-icon {
+    display: flex;
+    align-items: center;
+}
+
+.post-row a {
+    color: #9a9a9a;
+}
+
+.footer {
+    text-align: center;
+    color: #9a9a9a;
+    padding: 10px 0 20px;
+    font-size: 13px;
+}
+
+.settings-menu {
+    position: absolute;
+    width: 90%;
+    max-width: 350px;
+    height: 160px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    overflow: hidden;
+    top: 108%;
+    right: 5%;
+}
+
+.user-profile a {
+    font-size: 12px;
+    color: #1876f2;
+    text-decoration: none;
+}
+
+.settings-menu-inner {
+    padding: 20px;
+}
+
+.settings-menu hr {
+    border: 0;
+    height: 1px;
+    background: #9a9a9a;
+    margin: 15px 0;
+}
+
+.profile-container {
+    padding: 20px 15%;
+    color: #626262;
+}
+
+.cover-img {
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 14px;
+}
+
+.profile-details {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.pd-row {
+    display: flex;
+    align-items: flex-start;
+}
+
+.pd-image {
+    width: 100px;
+    margin-right: 20px;
+    border-radius: 6px;
+}
+
+.pd-row div h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.pd-row div p {
+    font-size: 13px;
+}
+
+.pd-right button {
+    background: #1876f2;
+    border: 0;
+    outline: 0;
+    padding: 6px 10px;
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.pd-right button img {
+    height: 15px;
+    margin-right: 10px;
+}
+
+.pd-right button:first-child {
+    background: #e4e6eb;
+    color: #000;
+}
+
+.profile-info {
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.info-col {
+    flex-basis: 33%;
+}
+
+.post-col {
+    flex-basis: 65%;
+}
+
+.profile-intro {
+    background: var(--bg-color);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.profile-intro h3 {
+    font-weight: 600;
+}
+
+.intro-text {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.profile-intro hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 24px 0;
+}
+
+.profile-intro ul li {
+    list-style: none;
+    font-size: 15px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.profile-intro ul li img {
+    width: 26px;
+    margin-right: 10px;
+}
+
+.title-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title-box a {
+    text-decoration: none;
+    color: #1876f2;
+    font-size: 14px;
+}
+
+.photo-box {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    margin-top: 15px;
+}
+
+.photo-box div img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.profile-intro p {
+    font-size: 14px;
+}
+
+.friends-box {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    margin-top: 15px;
+}
+
+.friends-box div img {
+    width: 100%;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
+
+.friends-box div {
+    position: relative;
+}
+
+.friends-box p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+}
+
+.button {
+    display: inline-block;
+    padding: 0.3rem 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+    background: lightcoral;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+    margin: 5px;
+}
+
+form {
+	max-width: 30rem;
+}
+
+form, form fieldset, form legend, form label, form input, form textarea, form select {
+	display: block;
+	width: 100%;
+	border: none;
+	padding: 0.4rem;
+}
+
+form textarea {
+	border: none;
+	background: transparent;
+}
+
+form fieldset {
+	border: 2px solid #666;
+	border-radius: 1rem;
+	box-shadow: 0 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+form legend {
+	border: 2px solid #666;
+	background-color: #234465;
+	color: white;
+	border-radius: 1rem;
+	box-shadow: 0 0 1rem 0.1rem rgba(0, 0, 0, 0.1);
+}
+
+form fieldset {
+	padding: 1em 2em 2em 2em;
+	position: relative;
+}
+
+form legend {
+	width: 30%;
+	padding: 0.5rem 1rem;
+	left: -1px;
+	top: -1.4rem;
+	position: absolute;
+}
+
+form label {
+	font-weight: bold;
+}
+
+
+.field .input, #type{
+	display: flex;
+	position: relative;
+	align-items: center;
+	border: 1px solid;
+	border-radius: 5px;
+}
+
+.field .input:after {
+	display: block;
+	content: '';
+}
+
+.field .input input, #type {
+	border: none;
+	flex: 1 1 auto;
+	padding: 0.4rem;
+	outline: none;
+	background: transparent;
+	z-index: 2;
+	order: 2;
+}
+
+.field .input .fas {
+	z-index: 2;
+	position: relative;
+	padding: 0 0 0 0.8rem;
+	font-size: 0.9em;
+	order: 1;
+}
+
+.field .input input+.actions {
+	display: block;
+	background: #FFF;
+	border: 1px solid #CCC;
+	border-radius: 0.3rem;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.field .input input:focus {
+	border-color: #090;
+}
+
+.field .input input:focus+.fas {
+	color: #090;
+}
+
+form textarea {
+	border-radius: 0.5rem;
+	padding: 0.8rem;
+}
+
+form textarea:focus {
+	outline: none;
+	border-color: #090;
+}
+
+.description {
+	width: 17rem;
+	height: 10vh;
+	padding: 2rem;
+	overflow: auto;
+}
+.book-description {
+	width: 30rem;
+	padding: 2rem;
+	overflow: auto;
+	text-align: justify;
+}
+
+.details {
+	display: flex;
+	justify-content: center;
+}
+
+.details .type {
+	margin: 5px;
+	font-size: 20px;
+}
+
+.details span.likes {
+	display: flex;
+    flex-direction: column;
+}
+
+.field .input:hover {
+	background: #c4c1c1;
+}
+
+.login{
+    padding: 30px 32%;
+    margin: 30px;
+}
+
+.register{
+    padding: 30px 32%;
+    margin: 30px;
+}
