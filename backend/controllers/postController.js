@@ -1,13 +1,5 @@
 const postService = require('../services/postService');
 
-const jwt = require('jsonwebtoken');
-
-const { promisify } = require('util');
-
-const jwtVerify = promisify(jwt.verify);
-
-const secret = 'hdasuidhasuia';
-
 exports.getPosts = async (req, res) => {
     try {
         const posts = await postService.getAll();
@@ -21,8 +13,7 @@ exports.getPosts = async (req, res) => {
 exports.createPost = async (req, res) => {
     const data = req.body;
 
-
-    data.owner = token._id;
+    console.log('req');
 
     try {
         let createdPost = await postService.create(data);
